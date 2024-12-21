@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/taufanAli65/ci-cd.git'
+                git branch: 'master', url: 'https://github.com/taufanAli65/ci-cd.git'
             }
         }
         stage('Install Dependencies') {

@@ -11,18 +11,18 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Run Unit Tests') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                // Add build commands here if needed
+                // Add build commands here if needed (e.g., MSBuild, npm run build, etc.)
             }
         }
         stage('Deploy') {
